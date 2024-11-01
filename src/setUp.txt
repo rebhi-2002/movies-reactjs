@@ -1,0 +1,80 @@
+npm install react-router-dom axios bootstrap react-bootstrap react-paginate react-icons react-toastify react-slick
+npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons
+npm install react-custom-scrollbars-2
+
+npm install swiper
+npm install bootstrap-icons
+npm install srexi/purecounterjs
+npm install react-countup
+npm install remixicon
+npm install react-slick slick-carousel
+npm install react-intersection-observer
+npm install react-transition-group
+# Install FontAwesome for React if not installed
+npm install @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons @fortawesome/react-fontawesome
+npm install @fortawesome/fontawesome-free
+npm install @iconify/react
+npm install react-spring
+npm install framer-motion
+npm install react-native-vector-icons
+npm install @fortawesome/react-fontawesome
+npm install @fortawesome/free-solid-svg-icons
+npm install @fortawesome/free-brands-svg-icons
+npm install @fortawesome/free-regular-svg-icons
+npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+npm install typed.js
+
+<!-- HTML PUBLIC -->
+
+<!-- GoogleFont's -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<!-- Boxicons -->
+<link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+<link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+<script src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js" crossorigin></script>
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<script src="https://code.iconify.design/1/1.0.0/iconify.min.js"></script>
+<!-- - -->
+<script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js" crossorigin></script>
+
+https://docs.fontawesome.com
+https://fontawesome.com/icons
+https://fontawesome.com/download
+https://docs.fontawesome.com/web/style/styling
+https://docs.fontawesome.com/web/use-with/react
+
+https://react-bootstrap.netlify.app/
+https://react-bootstrap.github.io/
+https://github.com/react-icons/react-icons
+https://react-icons.github.io/react-icons/
+https://mui.com/material-ui/material-icons/
+https://mui.com/material-ui/icons/
+
+
+"dependencies": {
+  "@testing-library/jest-dom": "^5.17.0",
+  "@testing-library/react": "^13.4.0",
+  "@testing-library/user-event": "^13.5.0",
+  "axios": "^1.7.7",
+  "bootstrap": "^5.3.3",
+  "jquery": "^3.7.1",
+  "react": "^18.3.1",
+  "react-bootstrap": "^2.10.4",
+  "react-dom": "^18.3.1",
+  "react-icons": "^5.3.0",
+  "react-loader-spinner": "^6.1.6",
+  "react-paginate": "^8.2.0",
+  "react-router-dom": "^6.26.2",
+  "react-scripts": "5.0.1",
+  "react-slick": "^0.30.2",
+  "react-toastify": "^10.0.5",
+  "slick-carousel": "^1.8.1",
+  "swiper": "^11.1.14",
+  "web-vitals": "^2.1.4"
+},

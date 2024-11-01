@@ -1,0 +1,394 @@
+.movieListContainer {
+  padding: 2rem;
+  background-color: #f0f0f5;
+}
+body[data-theme="dark"] .movieListContainer {
+  background-color: #1a1a1f !important;
+}
+body[data-theme="dark"] label {
+  color: #f0f0f5 !important;
+}
+.sectionTitle {
+  color: white;
+  font-size: 2rem;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  padding: 20px 50px;
+  width: fit-content;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: #007bff;
+}
+.sectionTitle .material-icons,
+.sectionTitle .fas {
+  color: #fff;
+  margin-right: 10px; /* مسافة بين الأيقونة والنص */
+  vertical-align: middle; /* محاذاة الأيقونة مع النص */
+}
+
+.listDetails {
+  padding: 20px;
+  margin: 20px auto 40px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.id {
+  color: #6c757d;
+}
+.item_count,
+.page,
+.total_page,
+.total_results {
+  margin-top: 10px;
+}
+
+.table {
+  width: 100%;
+  margin-top: 20px;
+}
+.table th {
+  background-color: #e9ecef;
+  font-weight: bold;
+}
+
+.movieGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.movieCard {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.movieCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+.movieCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.movieCard:hover::before {
+  opacity: 1;
+}
+
+/* style={{ backgroundImage: listDetails.poster_path ? `url(https://image.tmdb.org/t/p/w500${listDetails.poster_path})` : "none" }}  */
+
+.poster {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.details {
+  padding: 1rem;
+}
+.movieTitle {
+  font-size: 1.2rem;
+  color: #222;
+  margin: 0.5rem 0;
+}
+.overview {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+.rating {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #d400ff;
+}
+.releaseDate {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.loader,
+.error {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.vote_count,
+.rating,
+.releaseDate,
+.genre,
+.popularity {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.detailsOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  transition: opacity 0.3s ease, background-image 0.3s ease;
+}
+/* Show overlay on hover */
+.movieCard:hover .detailsOverlay {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.detailsOverlay .details {
+  position: relative;
+  /* z-index: 2; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow-y: auto;
+  z-index: 1;
+}
+.movieCard:hover .detailsOverlay .movieTitle {
+  color: #007bff; /* لون النص الأساسي */
+  color: #33ccff; /* لون أزرق فاتح مشرق */
+}
+.movieCard:hover .detailsOverlay .overview {
+  color: #444; /* لون النص */
+  color: #f0f0f0; /* لون رمادي فاتح جدًا */
+}
+.movieCard:hover .detailsOverlay .rating {
+  color: #ff6600; /* لون التقييم */
+  color: #ffcc00; /* لون ذهبي مشرق */
+}
+.movieCard:hover .detailsOverlay .releaseDate {
+  color: #888; /* لون تاريخ الإصدار */
+  color: #e6e6e6; /* لون فضي */
+}
+.movieCard:hover .detailsOverlay .vote_count,
+.movieCard:hover .detailsOverlay .genre,
+.movieCard:hover .detailsOverlay .popularity {
+  color: #555; /* لون التفاصيل الإضافية */
+  color: #ccccff; /* لون أرجواني فاتح */
+}
+
+.scrollContainer {
+  justify-content: space-between; /* توازن بين المحتوى */
+  overflow-y: auto; /* لتجنب مشاكل العرض مع النصوص الطويلة */
+  padding: 10px; /* مساحة بين النص والشريط */
+  z-index: 2; /* اجعل هذا العنصر فوق الخلفية */
+  scrollbar-width: thin; /* لشريط تمرير أرفع على Firefox */
+  scrollbar-color: #ffcc00 transparent; /* ألوان التمرير على Firefox */
+}
+/* تنسيق شريط التمرير */
+.scrollContainer::-webkit-scrollbar {
+  width: 8px;
+}
+.scrollContainer::-webkit-scrollbar-thumb {
+  background-color: #ffcc00;
+  border-radius: 10px;
+}
+.scrollContainer::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Pagination, TotalPages, Icon */
+.paginationContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 40px auto 10px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+.button:active:not(:disabled) {
+  transform: scale(0.95);
+}
+.button:not(:disabled):hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+.prevButton .arrow,
+.nextButton .arrow {
+  font-size: 1.2rem;
+  margin: 0 5px;
+}
+.icon {
+  font-size: 1.2em;
+}
+.prevButton .icon {
+  margin-right: 5px;
+}
+.nextButton .icon {
+  margin-left: 5px;
+}
+.pageIndicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+.pageNumber,
+.totalPages {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  color: #007bff;
+  border: 2px solid #007bff;
+  margin: 0 5px;
+  margin-right: 5px;
+}
+.separator {
+  color: #555;
+  margin: 0 5px;
+  font-size: 1.5rem;
+}
+.totalPages {
+  color: #555;
+}
+
+.Current__PageNumber {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  /* background-color: #0d6efd; */
+  /* color: #ffffff; */
+  background-color: #f8f9fa;
+  color: #007bff;
+  border: 2px solid #007bff;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 12px auto;
+  font-size: 1.2em;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(74, 144, 226, 0.2);
+  background-color: #17a2b8;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.Current__PageNumber:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(74, 144, 226, 0.4);
+  background-color: #0b5ed7;
+}
+.Current__PageNumber::before {
+  content: "Page";
+  position: absolute;
+  top: -25px;
+  font-size: 0.8em;
+  color: #4a90e2;
+  background-color: #ffffff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.Current__PageNumber:hover::before {
+  opacity: 1;
+}
+
+.textNeon {
+  width: 75%;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body[data-theme="dark"] .textNeon {
+  color: rgba(255, 255, 255, 0.85); /* لون نص أبيض ناعم */
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(200, 220, 255, 0.7)
+  );
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3); /* حواف شفافة */
+  text-shadow: 0 0 4px rgba(0, 102, 255, 0.6), 0 0 8px rgba(0, 102, 255, 0.4);
+}
+body[data-theme="light"] .textNeon {
+  color: rgba(0, 102, 255, 0.9);
+  background-image: linear-gradient(
+    135deg,
+    rgba(0, 102, 255, 0.8),
+    rgba(100, 150, 255, 0.6)
+  );
+  -webkit-text-stroke: 0.8px rgba(0, 0, 102, 0.2); /* حواف خفيفة */
+  text-shadow: 0 0 3px rgba(0, 102, 255, 0.4), 0 0 5px rgba(0, 102, 255, 0.2);
+}

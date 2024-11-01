@@ -1,0 +1,79 @@
+.about__page {
+  background-image: url("../../assets/cinema-elements-background_395-2147490887.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+.portfolio-title {
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 20px; /* Adjust spacing between text and zigzag */
+}
+.portfolio-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #58151c;
+  clip-path: polygon(
+    0 100%,
+    5% 50%,
+    10% 100%,
+    15% 50%,
+    20% 100%,
+    25% 50%,
+    30% 100%,
+    35% 50%,
+    40% 100%,
+    45% 50%,
+    50% 100%,
+    55% 50%,
+    60% 100%,
+    65% 50%,
+    70% 100%,
+    75% 50%,
+    80% 100%,
+    85% 50%,
+    90% 100%,
+    95% 50%,
+    100% 100%
+  );
+}
+body[data-theme="dark"] .portfolio-title::after {
+  background-color: #3c444a !important;
+}
+
+@media (max-width: 991.98px) {
+  .paragraph {
+    width: 100% !important;
+  }
+}
+@media (max-width: 768px) {
+  .paragraph {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.wave-container {
+  position: relative;
+  width: 100%;
+  height: 180px; /* Adjust wave size */
+  overflow: hidden;
+}
+.wave-container svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}

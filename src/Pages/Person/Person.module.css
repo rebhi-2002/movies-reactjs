@@ -1,0 +1,117 @@
+/* Search container */
+.search-container {
+  /* max-width: 1200px; */
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* CSS */
+.person-container {
+  background: linear-gradient(145deg, #f5f7fa, #c3cfe2); /* تدرج لوني لطيف */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* ظل خفيف لإبراز العنصر */
+  transition: transform 0.3s ease;
+}
+
+.person-container:hover {
+  transform: scale(1.02); /* تكبير بسيط عند التحويم */
+}
+
+.person-image {
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* إضافة ظل للصورة */
+  margin-bottom: 15px;
+}
+
+.person-details {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.person-details li {
+  margin-bottom: 10px;
+}
+
+.person-name {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.person-bio {
+  /* max-height: 150px; */
+  /* overflow-y: auto; */
+  padding: 15px;
+  margin-top: 5px;
+  background: #ecf0f1;
+  border-radius: 10px;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card,
+.tv-card {
+  min-height: 200px;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 0; /* اجعل العناصر تتوزع بشكل أفضل */
+}
+
+.movie-poster,
+.tv-poster {
+  max-height: 18rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.movie-title,
+.tv-title {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.movie-overview,
+.tv-overview {
+  font-size: 0.9rem;
+  color: #6c757d;
+  flex-grow: 1; /* اجعل نظرة الفيلم تنمو لتأخذ المساحة المتبقية */
+  overflow: hidden; /* مخفي إذا تجاوز النص */
+  text-overflow: ellipsis; /* تظهر النقاط إذا تجاوز النص */
+}
+
+.movie-release-date {
+  font-size: 0.85rem;
+  color: #adb5bd;
+}
+
+.vote-average {
+  background-color: #28a745;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+}
+
+/* تنسيق الزر عند إضافة المنتج */
+.btn-add {
+  background-color: #28a745; /* لون أخضر */
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* تنسيق الزر عند إزالة المنتج */
+.btn-remove {
+  background-color: #dc3545; /* لون أحمر */
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* تأثيرات عند التحويم */
+.btn-add:hover,
+.btn-remove:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,27 @@
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+.heart-icon:hover {
+  transform: scale(1.2);
+}
+
+.filled-heart {
+  color: #ffd700;
+  transition: fill 0.3s ease;
+}
+.heart-icon:hover .filled-heart {
+  fill: var(--background-secondary-light);
+}
+
+.outlined-heart {
+  color: var(--text-color-light);
+  transition: fill 0.3s ease;
+}
+.heart-icon:hover .outlined-heart {
+  fill: red;
+}

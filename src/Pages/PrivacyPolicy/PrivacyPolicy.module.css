@@ -1,0 +1,59 @@
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #eef;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  background-image: url("../../assets/cinema-elements-background_395-2147490887.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+.privacyContainer {
+  /* max-width: 800px; */
+  margin: auto;
+  padding: 50px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(248, 249, 250, 0.4);
+  border: 1px solid #ddd;
+  backdrop-filter: blur(15px);
+}
+@media (max-width: 768px) {
+  .privacyContainer {
+    width: 100% !important;
+  }
+}
+
+.heading {
+  color: #222;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.subheading {
+  color: #0056b3;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+.content {
+  /* color: #444; */
+  color: #000;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+a {
+  color: #0056b3;
+  text-decoration: underline;
+}
+a:hover {
+  color: #003580;
+}

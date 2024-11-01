@@ -1,0 +1,75 @@
+/* Style for navigation links */
+.nav-link {
+  margin-right: 10px;
+}
+
+/* Hover effect on navigation links */
+.nav-link:hover {
+  color: #ddd !important; /* Light grey on hover */
+}
+
+body[data-theme="light"] .navbar-brand {
+  background: var(--day-gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  text-fill-color: transparent !important;
+  font-size: 28px;
+}
+body[data-theme="dark"] .navbar-brand {
+  background: var(--night-gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  text-fill-color: transparent !important;
+  font-size: 28px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0;
+  white-space: nowrap;
+  transition: 0.3s;
+  letter-spacing: 0.4px;
+  position: relative;
+  text-transform: uppercase;
+}
+.nav-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0.5rem;
+  width: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
+}
+@media (max-width: 991.98px) {
+  .nav-link {
+    display: block;
+    margin: 5px 0 !important;
+  }
+  .nav-link svg {
+    margin: auto 15px;
+  }
+  .nav-link:before {
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    padding: 20px !important;
+    border: 2px solid #aaa !important;
+    border-radius: 20px !important;
+    background-color: transparent !important;
+  }
+}
+.nav-link:hover:before {
+  visibility: visible;
+  width: calc(100% - (0.5rem));
+}

@@ -1,0 +1,57 @@
+/* Container for movie details */
+.movie-details {
+  /* background: linear-gradient(to bottom right, rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('https://image.tmdb.org/t/p/original${movie.backdrop_path}'); */
+  background-position: center;
+  background-size: cover;
+  /* background-image: url("https://image.tmdb.org/t/p/original${movie.backdrop_path}"); */
+  backdrop-filter: blur(5px); /* Optional for blurred background */
+  color: var(--text-color); /* Use dynamic text color based on mode */
+}
+
+@media (max-width: 576px) {
+  .onMobile {
+    flex-direction: column !important;
+  }
+
+  .movie__videos {
+    margin: 25px auto !important;
+    width: 100% !important;
+  }
+}
+
+.top-right-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25%;
+  padding: 20px;
+  border-radius: 0 0 0 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.top-right-box:hover .outlined-heart,
+.top-right-box:hover .filled-heart {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.outlined-heart {
+  fill: red;
+}
+.top-right-box:hover {
+  background: red;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+  transition: background 0.3s ease-in-out;
+}
+.top-right-box:hover .outlined-heart {
+  fill: white;
+  transition: fill 0.3s ease-in-out;
+}
+
+.filled-heart {
+  fill: #ffd700;
+}

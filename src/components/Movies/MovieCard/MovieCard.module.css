@@ -1,0 +1,51 @@
+.movie-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.movie-card:hover {
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -10, 100, 1);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.movie-release-date {
+  font-size: 14px;
+  margin: 5px 0;
+  padding: 8px 15px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+body[data-theme="light"] .category-movies {
+  border-bottom: 4px solid #9f63e3;
+  color: var(--text-secondary-light);
+}
+body[data-theme="dark"] .category-movies {
+  border-bottom: 4px solid #5a2e9f;
+  color: var(--text-secondary-dark);
+}
+
+body[data-theme="light"] .card-body,
+body[data-theme="light"] .card-body {
+  background: var(--day-gradient) !important;
+  color: var(--text-secondary-light) !important;
+}
+body[data-theme="dark"] .card-body,
+body[data-theme="dark"] .card-body {
+  background: var(--night-gradient) !important;
+  color: var(--text-secondary-dark) !important;
+}
+
+body[data-theme="light"] .movie-release-date {
+  color: gray;
+}
+body[data-theme="dark"] .movie-release-date {
+  color: #ccc;
+}

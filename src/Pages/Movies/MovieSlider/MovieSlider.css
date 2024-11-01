@@ -1,0 +1,162 @@
+/* MovieSlider.css */
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+/* Container for the slider */
+.movie-slider {
+  /* overflow: hidden; */
+  margin-top: -1.5rem !important;
+  margin-bottom: 1.5rem;
+}
+
+/* Slider image styling */
+.slider-image {
+  height: 65vh;
+  /* height: 100%; */
+  /* height: auto; */
+  /* max-height: 65vh; */
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.slider-item:hover .slider-image {
+  /* transform: scale(1.05); */
+  filter: brightness(80%); /* تقليل السطوع عند التمرير */
+}
+
+.slick-list {
+  width: 100%;
+  height: 65vh;
+  padding: 0;
+}
+
+/* Fallback for missing images */
+.no-image {
+  font-size: 1.5rem;
+  /* height: 100%; */
+  height: 65vh; /* Same height as images */
+  color: #333;
+  background-color: #ccc; /* Placeholder color */
+  border-radius: 10px;
+}
+
+/* Caption overlay on the image */
+.slider-caption {
+  font-size: 1rem;
+  padding: 15px;
+  bottom: 30px;
+  left: 20px;
+  max-width: 95%;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .slider-caption {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 100% !important;
+  }
+}
+
+.slider-caption h2 {
+  font-size: 1.6rem;
+  margin: 0 0 5px;
+}
+
+.slider-caption p {
+  font-size: 1.1rem;
+  text-overflow: ellipsis; /* Ellipsis for long text */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  -webkit-box-orient: vertical; /* Vertical orientation for clamping */
+}
+
+/* Custom style for the next button */
+.slick-next {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: var(--text-color-light);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  transition: background 0.3s ease;
+}
+
+/* Custom style for the previous button */
+.slick-prev {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: var(--text-color-light);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  transition: background 0.3s ease;
+}
+
+/* Optional: Change button color on hover */
+.slick-next:hover,
+.slick-prev:hover {
+  background: rgba(255, 204, 0, 0.8);
+}
+
+/* Style the dots container */
+.slick-dots {
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  margin-top: auto;
+  list-style: none;
+}
+
+/* Style for each dot */
+.slick-dots li {
+  margin: 0 3px;
+}
+
+/* Style for the clickable area of the dots */
+.slick-dots li button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Change color for active dot */
+.slick-dots li.slick-active button {
+  background-color: #ffcc00;
+  transform: scale(1.2);
+}
+
+/* Add hover effect for the dots */
+.slick-dots li button:hover {
+  background-color: #ffcc00;
+}
+
+@media (max-width: 768px) {
+  .slick-dots {
+    display: none !important;
+  }
+}

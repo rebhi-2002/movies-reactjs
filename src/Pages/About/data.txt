@@ -1,0 +1,620 @@
+
+/*
+
+// import portfolio_01 from "../../../assets/portfolio/portfolio-01.png";
+// import portfolio_02 from "../../../assets/portfolio/portfolio-02.png";
+// import portfolio_03 from "../../../assets/portfolio/portfolio-03.png";
+// import portfolio_04 from "../../../assets/portfolio/portfolio-04.png";
+// import portfolio_05 from "../../../assets/portfolio/portfolio-05.png";
+// import portfolio_06 from "../../../assets/portfolio/portfolio-06.png";
+// import portfolio_07 from "../../../assets/portfolio/portfolio-07.png";
+// import portfolio_08 from "../../../assets/portfolio/portfolio-08.png";
+// import portfolio_09 from "../../../assets/portfolio/portfolio-09.png";
+// import portfolio_10 from "../../../assets/portfolio/portfolio-10.png";
+// import portfolio_11 from "../../../assets/portfolio/portfolio-11.png";
+// import portfolio_12 from "../../../assets/portfolio/portfolio-12.png";
+// import portfolio_13 from "../../../assets/portfolio/portfolio-13.png";
+// import portfolio_14 from "../../../assets/portfolio/portfolio-14.png";
+// import portfolio_15 from "../../../assets/portfolio/portfolio-15.png";
+// import portfolio_16 from "../../../assets/portfolio/portfolio-16.png";
+// import portfolio_17 from "../../../assets/portfolio/portfolio-17.png";
+// import portfolio_18 from "../../../assets/portfolio/portfolio-18.png";
+// import portfolio_19 from "../../../assets/portfolio/portfolio-19.png";
+// import portfolio_20 from "../../../assets/portfolio/portfolio-20.png";
+// import portfolio_21 from "../../../assets/portfolio/portfolio-21.png";
+// import portfolio_22 from "../../../assets/portfolio/portfolio-22.png";
+// import portfolio_23 from "../../../assets/portfolio/portfolio-23.png";
+// import portfolio_24 from "../../../assets/portfolio/portfolio-24.png";
+// import portfolio_25 from "../../../assets/portfolio/portfolio-25.png";
+
+// import portfoliodetails_01 from "../../../assets/portfolio/portfolio-details-01.png";
+// import portfoliodetails_02 from "../../../assets/portfolio/portfolio-details-02.png";
+// import portfoliodetails_03 from "../../../assets/portfolio/portfolio-details-03.png";
+// import portfoliodetails_04 from "../../../assets/portfolio/portfolio-details-04.png";
+// import portfoliodetails_04_1 from "../../../assets/portfolio/portfolio-details-04-1.png";
+// import portfoliodetails_05 from "../../../assets/portfolio/portfolio-details-05.png";
+// import portfoliodetails_05_1 from "../../../assets/portfolio/portfolio-details-05-1.png";
+// import portfoliodetails_05_2 from "../../../assets/portfolio/portfolio-details-05-2.png";
+// import portfoliodetails_05_3 from "../../../assets/portfolio/portfolio-details-05-3.png";
+// import portfoliodetails_05_4 from "../../../assets/portfolio/portfolio-details-05-4.png";
+// import portfoliodetails_06 from "../../../assets/portfolio/portfolio-details-06.png";
+// import portfoliodetails_07 from "../../../assets/portfolio/portfolio-details-07.png";
+// import portfoliodetails_08 from "../../../assets/portfolio/portfolio-details-08.png";
+// import portfoliodetails_08_1 from "../../../assets/portfolio/portfolio-details-08-1.png";
+// import portfoliodetails_08_2 from "../../../assets/portfolio/portfolio-details-08-2.png";
+// import portfoliodetails_09 from "../../../assets/portfolio/portfolio-details-09.png";
+// import portfoliodetails_10 from "../../../assets/portfolio/portfolio-details-10.png";
+// import portfoliodetails_10_1 from "../../../assets/portfolio/portfolio-details-10-1.png";
+// import portfoliodetails_11 from "../../../assets/portfolio/portfolio-details-11.png";
+// import portfoliodetails_11_1 from "../../../assets/portfolio/portfolio-details-11-1.png";
+// import portfoliodetails_12 from "../../../assets/portfolio/portfolio-details-12.png";
+// import portfoliodetails_12_1 from "../../../assets/portfolio/portfolio-details-12-1.png";
+// import portfoliodetails_12_2 from "../../../assets/portfolio/portfolio-details-12-2.png";
+// import portfoliodetails_13 from "../../../assets/portfolio/portfolio-details-13.png";
+// import portfoliodetails_13_1 from "../../../assets/portfolio/portfolio-details-13-1.png";
+// import portfoliodetails_14 from "../../../assets/portfolio/portfolio-details-14.png";
+// import portfoliodetails_15 from "../../../assets/portfolio/portfolio-details-15.png";
+// import portfoliodetails_15_1 from "../../../assets/portfolio/portfolio-details-15-1.png";
+// import portfoliodetails_16 from "../../../assets/portfolio/portfolio-details-16.png";
+// import portfoliodetails_17 from "../../../assets/portfolio/portfolio-details-17.png";
+// import portfoliodetails_18 from "../../../assets/portfolio/portfolio-details-18.png";
+// import portfoliodetails_19 from "../../../assets/portfolio/portfolio-details-19.png";
+// import portfoliodetails_19_1 from "../../../assets/portfolio/portfolio-details-19-1.png";
+// import portfoliodetails_20 from "../../../assets/portfolio/portfolio-details-20.png";
+// import portfoliodetails_20_1 from "../../../assets/portfolio/portfolio-details-20-1.png";
+// import portfoliodetails_20_2 from "../../../assets/portfolio/portfolio-details-20-2.png";
+// import portfoliodetails_21 from "../../../assets/portfolio/portfolio-details-21.png";
+// import portfoliodetails_22 from "../../../assets/portfolio/portfolio-details-22.png";
+// import portfoliodetails_22_1 from "../../../assets/portfolio/portfolio-details-22-1.png";
+// import portfoliodetails_23 from "../../../assets/portfolio/portfolio-details-23.png";
+// import portfoliodetails_24 from "../../../assets/portfolio/portfolio-details-24.png";
+// import portfoliodetails_24_1 from "../../../assets/portfolio/portfolio-details-24-1.png";
+// import portfoliodetails_25 from "../../../assets/portfolio/portfolio-details-25.png";
+// import portfoliodetails_25_1 from "../../../assets/portfolio/portfolio-details-25-1.png";
+// import portfoliodetails_25_2 from "../../../assets/portfolio/portfolio-details-25-2.png";
+
+// data.js
+// export const portfolioItems = [
+//   {
+//     id: 1,
+//     title: "HTML_And_CSS_Template_One",
+//     category: "html-css",
+//     type: "Web",
+//     imageUrl: `${portfolio_01}`,
+//     detailsUrl: "/about/portfolio/details/1",
+//     details: {
+//       title: "This is an example of portfolio detail",
+//       images: [portfoliodetails_01],
+//       info: {
+//         category: "Web design",
+//         client: "ASU Company",
+//         date: "24 August, 2021",
+//         url: "https://rebhi-2002.github.io/HTML_And_CSS_Template_One",
+//       },
+//       description: `Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
+//       Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium
+//       nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.`,
+//     },
+//   },
+//   {
+//     id: 2,
+//     title: "HTML_And_CSS_Template_Two",
+//     category: "html-css",
+//     type: "Web",
+//     imageUrl: `${portfolio_02}`,
+//     detailsUrl: "/about/portfolio/details/2",
+//     details: {
+//       title: "This is an example of portfolio detail",
+//       images: [portfoliodetails_02],
+//       info: {
+//         category: "Web design",
+//         type: "Web",
+//         client: "ASU Company",
+//         date: "06 October, 2021",
+//         url: "https://rebhi-2002.github.io/HTML_And_CSS_Template_Two",
+//       },
+//       description: `Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
+//       Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium
+//       nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.`,
+//     },
+//   },
+//   {
+//     id: 3,
+//     title: "Seven_Template",
+//     category: "html-css",
+//     type: "Web",
+//     imageUrl: `${portfolio_03}`,
+//     detailsUrl: "/about/portfolio/details/3",
+//     details: {
+//       title: "This is an example of portfolio detail",
+//       images: [portfoliodetails_03],
+//       info: {
+//         category: "Web design",
+//         client: "ASU Company",
+//         date: "29 November, 2021",
+//         url: "https://rebhi-2002.github.io/Seven_Template",
+//       },
+//       description: `Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
+//       Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium
+//       nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.`,
+//     },
+//   },
+//   {
+//     id: 4,
+//     title: "HTML_And_CSS_Template_Three",
+//     category: "html-css",
+//     type: "Web",
+//     imageUrl: `${portfolio_04}`,
+//     detailsUrl: "/about/portfolio/details/4",
+//     details: {
+//       title: "This is an example of portfolio detail",
+//       images: [portfoliodetails_04, portfoliodetails_04_1],
+//       info: {
+//         category: "Web design",
+//         client: "ASU Company",
+//         date: "20 December, 2022",
+//         url: "https://rebhi-2002.github.io/HTML_And_CSS_Template_Three",
+//       },
+//       description: `Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
+//       Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium
+//       nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.`,
+//     },
+//   },
+//   {
+//     id: 5,
+//     title: "Rebhe-Portfolio",
+//     category: "html-css",
+//     type: "My_Site",
+//     imageUrl: `${portfolio_05}`,
+//     detailsUrl: "/about/portfolio/details/5",
+//     details: {
+//       title: "This is an example of portfolio detail",
+//       images: [
+//         portfoliodetails_05,
+//         portfoliodetails_05_1,
+//         portfoliodetails_05_2,
+//         portfoliodetails_05_3,
+//         portfoliodetails_05_4,
+//       ],
+//       info: {
+//         category: "Web design",
+//         client: "ASU Company",
+//         date: "10 October, 2022",
+//         url: "https://rebhi-2002.github.io/Rebhe-Portfolio",
+//       },
+//       description: `Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
+//       Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium
+//       nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.`,
+//     },
+//   },
+//   {
+//     id: 6,
+//     title: "Preview2HtmlLv2",
+//     category: "js",
+//     type: "Web",
+//     imageUrl: `${portfolio_06}`,
+//     detailsUrl: "/about/portfolio/details/6",
+//     details: {
+//       title: "This is an example of portfolio detail",
+//       images: [portfoliodetails_06],
+//       info: {
+//         category: "Web design",
+//         client: "ASU Company",
+//         date: "19 February, 2022",
+//         url: "https://rebhi-2002.github.io/Preview2HtmlLv2",
+//       },
+//       description: `Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
+//       Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium
+//       nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.`,
+//     },
+//   },
+//   {
+//     id: 7,
+//     title: "Preview2HtmlLv3",
+//     category: "js",
+//     type: "Web",
+//     imageUrl: `${portfolio_07}`,
+//     detailsUrl: "/about/portfolio/details/7",
+//     details: {
+//       title: "This is an example of portfolio detail",
+//       images: [portfoliodetails_07],
+//       info: {
+//         category: "Web design",
+//         client: "ASU Company",
+//         date: "23 September, 2022",
+//         url: "https://rebhi-2002.github.io/Preview2HtmlLv3",
+//       },
+//       description: `Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
+//       Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium
+//       nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.`,
+//     },
+//   },
+//   {
+//     id: 8,
+//     title: "webdesign-finishingourhomepage",
+//     category: "xd",
+//     type: "Design",
+//     imageUrl: `${portfolio_08}`,
+//     detailsUrl: "/about/portfolio/details/8",
+//     details: {
+//       title: "This is an example of portfolio detail",
+//       images: [
+//         portfoliodetails_08,
+//         portfoliodetails_08_1,
+//         portfoliodetails_08_2,
+//       ],
+//       info: {
+//         category: "Design",
+//         client: "ASU Company",
+//         date: "04 December, 2022",
+//         url: "",
+//       },
+//       description: `Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
+//       Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium
+//       nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.`,
+//     },
+//   },
+//   {
+//     id: 9,
+//     title: "Special_Design_One",
+//     category: "js",
+//     type: "Web",
+//     imageUrl: `${portfolio_09}`,
+//     detailsUrl: "/about/portfolio/details/9",
+//     details: {
+//       title: "This is an example of portfolio detail",
+//       images: [portfoliodetails_09],
+//       info: {
+//         category: "Web design",
+//         client: "ASU Company",
+//         date: "18 December, 2022",
+//         url: "https://rebhi-2002.github.io/Special_Design_One",
+//       },
+//       description: `Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
+//       Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium
+//       nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.`,
+//     },
+//   },
+//   {
+//     id: 10,
+//     title: "Food",
+//     category: "html-css",
+//     type: "Web",
+//     imageUrl: `${portfolio_10}`,
+//     detailsUrl: "/about/portfolio/details/10",
+//     details: {
+//       title: "This is an example of portfolio detail",
+//       images: [portfoliodetails_10, portfoliodetails_10_1],
+//       info: {
+//         category: "Web design",
+//         client: "ASU Company",
+//         date: "22 January, 2023",
+//         url: "https://rebhi-2002.github.io/Complete-Responsive-Website-from-Scratch",
+//       },
+//       description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod quam in magna lacinia,
+//       vitae fermentum nunc tincidunt. Phasellus scelerisque est vitae ligula efficitur, vitae luctus nunc
+//       scelerisque. Praesent scelerisque elit vel quam hendrerit, in auctor lacus bibendum.`,
+//     },
+//   },
+//   {
+//     id: 11,
+//     title: "Page Scroll",
+//     category: "js",
+//     type: "Web",
+//     imageUrl: `${portfolio_11}`,
+//     detailsUrl: "/about/portfolio/details/11",
+//     details: {
+//       title: "This is an example of portfolio detail",
+//       images: [portfoliodetails_11, portfoliodetails_11_1],
+//       info: {
+//         category: "Web design",
+//         client: "Tech Innovations",
+//         date: "23 January, 2023",
+//         url: "https://rebhi-2002.github.io/Animation-On-Page-Scroll",
+//       },
+//       description: `Curabitur non libero vel lacus pellentesque tempor. Fusce malesuada augue sit amet
+//       massa hendrerit, nec facilisis ligula aliquet. Aenean in augue ut justo consectetur tincidunt.
+//       Donec at metus ut nulla dignissim suscipit.`,
+//     },
+//   },
+//   {
+//     id: 12,
+//     title: "Bootstrap 3 Design One",
+//     category: "bootstrap",
+//     type: "Web",
+//     imageUrl: `${portfolio_12}`,
+//     detailsUrl: "/about/portfolio/details/12",
+//     details: {
+//       title: "This is an example of portfolio detail",
+//       images: [
+//         portfoliodetails_12,
+//         portfoliodetails_12_1,
+//         portfoliodetails_12_2,
+//       ],
+//       info: {
+//         category: "Web design",
+//         client: "Design Studio",
+//         date: "25 January, 2023",
+//         url: "https://rebhi-2002.github.io/Bootstrap-3-Design-One",
+//       },
+//       description: `Duis vehicula libero vitae sem auctor, a laoreet metus efficitur. Proin in
+//       sapien at felis consectetur sagittis. Sed quis ipsum nec velit malesuada vulputate ac sed
+//       nunc. Sed et enim quis justo viverra feugiat.`,
+//     },
+//   },
+//   {
+//     id: 13,
+//     title: "Personal Portfolio Website Design",
+//     category: "js",
+//     type: "Web",
+//     imageUrl: `${portfolio_13}`,
+//     detailsUrl: "/about/portfolio/details/13",
+//     details: {
+//       title: "This is an example of portfolio detail",
+//       images: [portfoliodetails_13, portfoliodetails_13_1],
+//       info: {
+//         category: "Web design",
+//         client: "Personal Project",
+//         date: "25 January, 2023",
+//         url: "https://rebhi-2002.github.io/Responsive-Personal-Portfolio-Website-Design",
+//       },
+//       description: `Vestibulum accumsan arcu eget risus malesuada, a vehicula odio gravida.
+//       Integer nec ligula vitae ante vehicula dapibus. Sed interdum libero id tortor bibendum,
+//       sed aliquet enim consequat.`,
+//     },
+//   },
+//   {
+//     id: 14,
+//     title: "Bootstrap 3 Design Two",
+//     category: "bootstrap",
+//     type: "Web",
+//     imageUrl: `${portfolio_14}`,
+//     detailsUrl: "/about/portfolio/details/14",
+//     details: {
+//       title: "This is an example of portfolio detail",
+//       images: [portfoliodetails_14],
+//       info: {
+//         category: "Web design",
+//         client: "Creative Agency",
+//         date: "27 January, 2023",
+//         url: "https://rebhi-2002.github.io/Bootstrap-3-Design-Two",
+//       },
+//       description: `Donec tincidunt metus a ligula venenatis, ac cursus magna vestibulum.
+//       Aliquam erat volutpat. Sed suscipit mauris ut nisl accumsan, ac feugiat orci
+//       interdum. Quisque tristique enim ut justo faucibus, nec varius lectus cursus.`,
+//     },
+//   },
+//   {
+//     id: 15,
+//     title: "Chart JS Integration And Graphs - Responsive Admin Dashboard",
+//     category: "js",
+//     type: "Web",
+//     imageUrl: `${portfolio_15}`,
+//     detailsUrl: "/about/portfolio/details/15",
+//     details: {
+//       title: "This is an example of portfolio detail",
+//       images: [portfoliodetails_15, portfoliodetails_15_1],
+//       info: {
+//         category: "Web design",
+//         client: "Data Analytics Firm",
+//         date: "11 February, 2023",
+//         url: "https://rebhi-2002.github.io/Chart-JS-Integration-And-Graphs---Responsive-Admin-Dashboard",
+//       },
+//       description: `Maecenas euismod turpis id felis sollicitudin, et interdum urna accumsan.
+//       Nulla facilisi. Proin vel ex quis tortor tristique facilisis non sed magna.
+//       Donec nec neque id quam luctus vehicula at eu metus.`,
+//     },
+//   },
+//   {
+//     id: 16,
+//     title: "Bootstrap 4 - Responsive Web Design",
+//     category: "bootstrap",
+//     type: "Web",
+//     imageUrl: `${portfolio_16}`,
+//     detailsUrl: "/about/portfolio/details/16",
+//     details: {
+//       title: "Bootstrap 4 Example",
+//       images: [portfoliodetails_16],
+//       info: {
+//         category: "Web Development",
+//         client: "Creative Agency",
+//         date: "31 January, 2023",
+//         url: "https://rebhi-2002.github.io/Bootstrap-4",
+//       },
+//       description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+//     Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+//     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+//     },
+//   },
+//   {
+//     id: 17,
+//     title: "Bootstrap 5 - Modern Web Interface",
+//     category: "bootstrap",
+//     imageUrl: `${portfolio_17}`,
+//     type: "Web",
+//     detailsUrl: "/about/portfolio/details/17",
+//     details: {
+//       title: "Bootstrap 5 Example",
+//       images: [portfoliodetails_17],
+//       info: {
+//         category: "Web Design",
+//         client: "Tech Solutions",
+//         date: "02 February, 2023",
+//         url: "https://rebhi-2002.github.io/Bootstrap-5",
+//       },
+//       description: `Quisque volutpat consequat arcu, sit amet dapibus erat ultrices sit amet.
+//     Aenean facilisis malesuada risus ut bibendum. Nulla facilisi. Phasellus vitae ante at elit tempus malesuada.`,
+//     },
+//   },
+//   {
+//     id: 18,
+//     title: "Portfolio Showcase - Creative Designs",
+//     category: "html-css",
+//     imageUrl: `${portfolio_18}`,
+//     type: "Web",
+//     detailsUrl: "/about/portfolio/details/18",
+//     details: {
+//       title: "Portfolio Showcase Example",
+//       images: [portfoliodetails_18],
+//       info: {
+//         category: "Graphic Design",
+//         client: "Design Studio",
+//         date: "27 January, 2023",
+//         url: "https://rebhi-2002.github.io/Complete-Responsive-Personal-Portfolio-Website-from-Scratch",
+//       },
+//       description: `Suspendisse potenti. Sed euismod orci sed magna aliquam, sit amet convallis elit tincidunt.
+//     Duis pretium ligula id quam interdum, et sagittis odio tincidunt. Cras nec odio eu libero viverra scelerisque.`,
+//     },
+//   },
+//   {
+//     id: 19,
+//     title: "Coming Soon",
+//     category: "landing-page",
+//     type: "Landing Page",
+//     imageUrl: `${portfolio_19}`,
+//     detailsUrl: "/about/portfolio/details/19",
+//     details: {
+//       title: "This is an example of coming soon landing page",
+//       images: [portfoliodetails_19, portfoliodetails_19_1],
+//       info: {
+//         category: "Landing Page",
+//         client: "Startup Company",
+//         date: "07 September, 2022",
+//         url: "https://rebhi-2002.github.io/Coming_Soon",
+//       },
+//       description: `A simple and elegant coming soon landing page design.
+//     This layout is perfect for upcoming projects and helps generate interest in your brand.
+//     Be ready to launch in style!`,
+//     },
+//   },
+//   {
+//     id: 20,
+//     title: "Starbucks Website",
+//     category: "landing-page",
+//     type: "Landing Page",
+//     imageUrl: `${portfolio_20}`,
+//     detailsUrl: "/about/portfolio/details/20",
+//     details: {
+//       title: "Starbucks Coffee Website",
+//       images: [
+//         portfoliodetails_20,
+//         portfoliodetails_20_1,
+//         portfoliodetails_20_2,
+//       ],
+//       info: {
+//         category: "Landing Page",
+//         client: "Starbucks",
+//         date: "16 September, 2022",
+//         url: "https://rebhi-2002.github.io/Starbucks_Website_Landing_Page",
+//       },
+//       description: `Experience the delightful world of Starbucks with this beautifully crafted landing page.
+//     Showcasing the menu, latest offers, and brand essence, this design enhances user engagement.`,
+//     },
+//   },
+//   {
+//     id: 21,
+//     title: "Glassmorphism Website",
+//     category: "landing-page",
+//     type: "Landing Page",
+//     imageUrl: `${portfolio_21}`,
+//     detailsUrl: "/about/portfolio/details/21",
+//     details: {
+//       title: "Glassmorphism Style Landing Page",
+//       images: [portfoliodetails_21],
+//       info: {
+//         category: "Landing Page",
+//         client: "Modern Web Agency",
+//         date: "08 September, 2022",
+//         url: "https://rebhi-2002.github.io/Glassmorphism_Website",
+//       },
+//       description: `Utilizing glassmorphism design principles, this landing page creates a unique and immersive user experience.
+//     Perfect for modern brands looking to stand out.`,
+//     },
+//   },
+//   {
+//     id: 22,
+//     title: "Netflix",
+//     category: "landing-page",
+//     type: "Landing Page",
+//     imageUrl: `${portfolio_22}`,
+//     detailsUrl: "/about/portfolio/details/22",
+//     details: {
+//       title: "Netflix Landing Page",
+//       images: [portfoliodetails_22, portfoliodetails_22_1],
+//       info: {
+//         category: "Landing Page",
+//         client: "Netflix",
+//         date: "09 September, 2022",
+//         url: "https://rebhi-2002.github.io/Netflix_Landing_Page",
+//       },
+//       description: `The ultimate Netflix landing page designed for maximum user engagement.
+//     This layout highlights the latest movies and shows, driving subscriptions and user retention.`,
+//     },
+//   },
+//   {
+//     id: 23,
+//     title: "Travel Website Header Design",
+//     category: "landing-page",
+//     type: "Landing Page",
+//     imageUrl: `${portfolio_23}`,
+//     detailsUrl: "/about/portfolio/details/23",
+//     details: {
+//       title: "Beautiful Travel Website Header",
+//       images: [portfoliodetails_23],
+//       info: {
+//         category: "Landing Page",
+//         client: "Travel Agency",
+//         date: "09 September, 2022",
+//         url: "https://rebhi-2002.github.io/Travel_Website_Header_Design",
+//       },
+//       description: `A stunning header design for a travel website that captures the spirit of adventure.
+//     This layout invites users to explore destinations and services offered by the agency.`,
+//     },
+//   },
+//   {
+//     id: 24,
+//     title: "My Blog",
+//     category: "html-css",
+//     type: "Web",
+//     imageUrl: `${portfolio_24}`,
+//     detailsUrl: "/about/portfolio/details/24",
+//     details: {
+//       title: "Personal Blog Design",
+//       images: [portfoliodetails_24, portfoliodetails_24_1],
+//       info: {
+//         category: "Web",
+//         client: "Personal Project",
+//         date: "21 March, 2023",
+//         url: "https://rebhi-2002.github.io/Complete-Responsive-Blog-Website-Design",
+//       },
+//       description: `An elegant and minimalistic design for a personal blog.
+//     The layout emphasizes readability and easy navigation, perfect for sharing thoughts and stories.`,
+//     },
+//   },
+//   {
+//     id: 25,
+//     title: "Composition Website",
+//     category: "scss",
+//     type: "Web",
+//     imageUrl: `${portfolio_25}`,
+//     detailsUrl: "/about/portfolio/details/25",
+//     details: {
+//       title: "Composition Website Design",
+//       images: [
+//         portfoliodetails_25,
+//         portfoliodetails_25_1,
+//         portfoliodetails_25_2,
+//       ],
+//       info: {
+//         category: "Web",
+//         client: "Design Studio",
+//         date: "15 May, 2023",
+//         url: "https://rebhi-2002.github.io/SASS-SCSS-/",
+//       },
+//       description: `A modern and creative website design showcasing composition in art and music.
+//     This layout blends visuals and content seamlessly, attracting art enthusiasts and students alike.`,
+//     },
+//   },
+// ];
+
+*/

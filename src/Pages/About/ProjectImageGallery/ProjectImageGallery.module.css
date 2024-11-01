@@ -1,0 +1,89 @@
+.container-fluid {
+  background-image: url("../../../assets/cinema-elements-background_395-2147490887.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+.project-image-gallery {
+  margin: auto;
+  padding: 40px 20px;
+  max-width: 1400px;
+}
+
+@media (max-width: 991px) {
+  .toolbar-buttons {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  .toolbar-buttons button {
+    width: 80% !important;
+    margin: 10px auto !important;
+  }
+  .toolbar-buttons .back-button {
+    margin-bottom: 30px !important;
+  }
+}
+@media (max-width: 768px) {
+  .toolbar-buttons button {
+    width: 100% !important;
+  }
+}
+
+.gallery-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.gallery-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.back-button {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.back-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+.back-button i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+  vertical-align: middle; /* محاذاة الأيقونة مع النص */
+}
+
+/* btn-scroll */
+.hero .btn-scroll {
+  transition: 0.4s;
+  color: rgba(255, 255, 255, 0.6);
+  animation: up-down 1s ease-in-out infinite alternate-reverse both;
+  text-decoration: none;
+}
+.hero .btn-scroll:hover {
+  color: #cfe2ff;
+}
+.hero .btn-scroll i {
+  font-size: 80px;
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}

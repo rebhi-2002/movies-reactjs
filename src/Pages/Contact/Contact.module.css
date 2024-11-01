@@ -1,0 +1,41 @@
+.container {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+  .container {
+    width: 90% !important;
+  }
+}
+.heading {
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+.form-contact {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+input,
+textarea {
+  border-radius: 5px;
+}
+.invalid-feedback {
+  color: #dc3545;
+}
+.form-label {
+  color: #495057;
+}
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+}

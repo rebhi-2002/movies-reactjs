@@ -1,0 +1,93 @@
+.container {
+  margin: auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+.card {
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+}
+.blockquote {
+  font-size: 1.1rem;
+  color: #6c757d;
+  border-left: 4px solid #007bff;
+  padding-left: 15px;
+}
+.blockquote-footer {
+  color: #6c757d;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding-top: 5px;
+  text-align: right;
+}
+.badge {
+  color: #333;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+.badge-success {
+  background-color: #28a745;
+  color: #fff;
+}
+.badge-warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.listUnstyled li {
+  background: #f8f9fa;
+  padding: 0 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.ratingSection,
+.caseStudiesSection,
+.contactInfoSection {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+.sectionTitle {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+.ratingValue,
+.categories {
+  font-size: 1.2rem;
+  color: #555;
+}
+.caseStudiesList {
+  padding-left: 20px;
+}
+.caseStudyTitle {
+  font-size: 1.25rem;
+  color: #007bff;
+}
+.caseStudyDescription {
+  font-size: 1rem;
+  color: #666;
+}
+.contactInfoSection p {
+  font-size: 1.1rem;
+  color: #444;
+}
+.contactInfoSection a {
+  color: #007bff;
+  text-decoration: none;
+}
+.contactInfoSection a:hover {
+  text-decoration: underline;
+}
