@@ -1,3 +1,8 @@
+** ?id
+** /id
+
+-------------
+
 1. useParams
 الوصف: useParams يُستخدم لجلب المعلمات من المسار نفسه (مثل /product/:productId)، مما يعني أن القيم تأتي كجزء من المسار المباشر.
 
@@ -11,6 +16,8 @@
 استخدامات شائعة لـ useParams:
 المواقع التي تحتوي على صفحات ملفات شخصية (/user/:userId).
 عرض تفاصيل العناصر مثل المنتجات أو المقالات (/product/:productId).
+
+
 2. searchParams
 الوصف: searchParams يُستخدم لاستخراج المعلمات من استعلامات البحث (مثل ?category=electronics&page=2).
 
@@ -27,3 +34,37 @@
 متى تختار كل طريقة؟
 اختر useParams عندما تكون لديك معلمة واحدة رئيسية مثل المعرف (ID)، أو عندما تحتاج لبنية مسار واضحة ومباشرة.
 اختر searchParams عندما تحتاج لمعلمات متعددة يمكن أن تتغير بشكل ديناميكي دون التأثير على مسار الصفحة بشكل عام، أو إذا كنت بحاجة لتحديث معلمات الفلترة والتصفح.
+
+
+Line 64: [src\Pages\Movies\MovieShowcase\MovieShowcase.js]
+==========================================================
+
+// من الرابط عند تحميل المكون `page` و `id` جلب
+useEffect(() => {
+  // const queryId = searchParams.get("id");
+  // const queryPage = searchParams.get("page");
+  //* `state` إلى أرقام صحيحة وتعيينهم للحالات page و id تأكد من تحويل
+  // if (queryId) setListId(queryId); console.log(queryId);
+  // if (queryPage) setCurrentPage(Number(queryPage)); console.log(queryPage);
+
+  // فقط إذا كانت موجودة `id` تعيين
+  if (id) setListId(id);
+  console.log("ID: ", id);
+  // فقط إذا كانت موجودة وقيمة صحيحة `page` تعيين
+  if (page && !isNaN(page)) {
+    // setCurrentPage(Number(page)); // console.log(page);
+    const parsedPage = Number(page);
+    if (parsedPage > 0) {
+      setCurrentPage(
+        Math.min(parsedPage, listDetails.totalPages || parsedPage)
+      ); // تحقق من أن الرقم ضمن النطاق
+    } else {
+      setCurrentPage(1); // تعيين 1 كقيمة افتراضية
+    }
+  } else {
+    setCurrentPage(1); // تعيين 1 كقيمة افتراضية
+  }
+
+  console.log("ID: ", id);
+  console.log("Page: ", currentPage);
+}, [id, page, listDetails.totalPages]);
